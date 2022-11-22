@@ -1,0 +1,103 @@
+1. Create a set of Corporate Website mockups for the company Digital Espresso. Prepare at a minimum the following files:
+
+- index.html
+- aboutus.html
+- products.html
+- branches.html
+
+Make sure that each page has the following: 
+
+- a standard header with a logo (for the logo, you may choose any royalty-free image related to coffee)
+- a navigation bar with links to the following:
+    - Home
+    - Products
+    - Branches
+    - About
+- a brownish-red (i.e., coffee-themed) background color
+- a standard footer
+
+2. For products.html specifically:
+
+- Create a table containing coffee products. You may use the products from earlier exercises.
+- Embed one image per product in the table.
+- Make the name of the product clickable.
+- Create one html file per product. Clicking on the product name from the previous step should load the specific product html page. Each product html page should either have a link to go back to the products.html page. Note also that all the pages must follow the standard elements mentioned in #1 (i.e., standard header with logo, nav bar, footer, etc.).
+
+
+footer html
+<div class="footer">
+                <div class="col-1">
+                    <h3>USEFUL LINKS</h3>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Branches</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="col-2">
+                    <h3>NEWSLETTER</h3>
+                    <form>
+                        <input type="text" placeholder="Your Email Address">
+                        <button type="submit">SUBSCRIBE NOW</button>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <h3>ADDRESS</h3>
+                    <p>Ateneo De Manila University<br>Katipunan Avenue, Quezon City, Metro Manila, Philippines</p>
+                </div>
+            </div>
+
+footer css
+.footer{
+    margin-top: 2500px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 2;
+}
+
+
+
+footer html did not work
+<footer>
+
+            <div class="footer">
+                <div class="footer-bottom">
+                    <h3>2022 Digital Espresso Coffee Shop. All Rights Reserved.</h3>
+                </div>
+            </div>
+
+        </footer>
+
+
+footer css did not work
+footer{
+    background: #333;
+    height: auto;
+    width: 100vw;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color:#fff;
+}
+.footer-bottom{
+    width: 100vw%;
+    padding: 20px 0;
+    background: #333;
+    text-align: center;
+}
+.footer-bottom h3{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
